@@ -1,0 +1,41 @@
+$general-grey: rgb(226, 226, 226);
+$none-active-grey: rgb(161, 161, 161);
+$general-dark-grey: rgb(31, 31, 31);
+
+%smooth-corners {
+    .smooth-corner-top {
+        position: absolute;
+        top: -60px;
+        width: 100%;
+        height: calc(var(--tan) * 50vw + 61px);
+        border-top-right-radius: 40px;
+        background-color: $general-grey;
+        box-shadow: 0 -15px 15px 0 rgba(0, 0, 0, 0.342);
+        transform: skewY(2deg);
+        img {
+            position: absolute;
+            left: 0;
+            bottom: calc(var(--tan) * 50vw + 60px);
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .smooth-corner-bottom {
+        position: absolute;
+        bottom: -60px;
+        width: 100%;
+        height: calc(var(--tan) * 50vw + 61px);
+        border-bottom-right-radius: 40px;
+        background-color: $general-grey;
+        box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.342);
+        transform: skewY(-2deg);
+        img {
+            position: absolute;
+            top: calc(var(--tan) * 50vw + 59px);
+            left: 0;
+            width: 40px;
+            height: 40px;
+            transform: scaleY(-1);
+        }
+    }
+}

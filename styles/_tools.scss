@@ -1,0 +1,40 @@
+.tools-section {
+    position: relative;
+    width: 100%;
+    background-color: $general-grey;
+    @extend %smooth-corners;
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0;
+        @media (min-width: 680px) {
+            max-width: 700px;
+        }
+        li {
+            text-align: center;
+            width: 100px;
+            margin: 25px 5px;
+            z-index: 1;
+            @media (min-width: 680px) {
+                margin: 25px 20px;
+            }
+            img {
+                display: block;
+                width: 45px;
+                margin: 0 auto 10px;
+                @media (min-width: 680px) {
+                    width: 65px;
+                }
+            }
+            span {
+                font-size: 14px;
+                @media (min-width: 680px) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
